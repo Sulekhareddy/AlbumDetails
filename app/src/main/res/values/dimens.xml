@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_size">18sp</dimen>
+    <dimen name="padding">5dp</dimen>
+    <dimen name="item_padding">8dp</dimen>
+    <dimen name="list_item_general_margin">5dp</dimen>
+    <dimen name="list_item_card_corner_radius">8dp</dimen>
+    <dimen name="list_item_card_elevation">8dp</dimen>
+    <dimen name="emplyee_name">20sp</dimen>
+    <dimen name="textSize">28sp</dimen>
+    <dimen name="margin">30dp</dimen>
+    <dimen name="margin_start_end">8dp</dimen>
+    <dimen name="margin_top">30dp</dimen>
+    <dimen name="margin_top_editText">256dp</dimen>
+</resources>
