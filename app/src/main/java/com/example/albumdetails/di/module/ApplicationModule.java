@@ -2,7 +2,7 @@ package com.example.albumdetails.di.module;
 
 import android.content.Context;
 
-import com.example.albumdetails.UserApp;
+import com.example.albumdetails.AlbumApp;
 import com.example.albumdetails.data.Repository;
 import com.example.albumdetails.data.local.AlbumDao;
 import com.example.albumdetails.data.remote.AlbumService;
@@ -21,9 +21,9 @@ public class ApplicationModule {
 
     public static final String BASE_URL = "https://jsonplaceholder.typicode.com/";
 
-    private final UserApp app;
+    private final AlbumApp app;
 
-    public ApplicationModule(UserApp app) {
+    public ApplicationModule(AlbumApp app) {
         this.app = app;
     }
 

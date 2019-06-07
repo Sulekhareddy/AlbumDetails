@@ -8,7 +8,7 @@ import com.example.albumdetails.di.component.DaggerApplicationComponent;
 import com.example.albumdetails.di.module.ApplicationModule;
 import com.example.albumdetails.di.module.DatabaseModule;
 
-public class UserApp extends Application {
+public class AlbumApp extends Application {
 
     private static ApplicationComponent applicationComponent;
 
@@ -22,8 +22,8 @@ public class UserApp extends Application {
                 .build();
     }
 
-    public static UserApp getInstance(Context context) {
-        return (UserApp) context.getApplicationContext();
+    public static AlbumApp getInstance(Context context) {
+        return (AlbumApp) context.getApplicationContext();
     }
 
     public ApplicationComponent getApplicationComponent() {
