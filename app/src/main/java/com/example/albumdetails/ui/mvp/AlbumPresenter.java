@@ -28,7 +28,7 @@ public class AlbumPresenter {
                 .observeOn(AndroidSchedulers.mainThread())
                 .doOnSubscribe(disposable -> view.showProgressBar(true))
                 .doFinally(() -> view.showProgressBar(false))
-                .subscribe(view::setUsers, throwable -> view.showError(throwable.getMessage())));
+                .subscribe(view::setAlbums, throwable -> view.showError(throwable.getMessage())));
     }
 
     private void addDisposable(Disposable disposable) {

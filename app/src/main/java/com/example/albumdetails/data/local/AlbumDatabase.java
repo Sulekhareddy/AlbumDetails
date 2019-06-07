@@ -10,5 +10,4 @@ public abstract class AlbumDatabase extends RoomDatabase {
 
     public abstract AlbumDao albumDao();
 
-
 }

@@ -10,7 +10,7 @@ import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.example.albumdetails.R;
-import com.example.albumdetails.UserApp;
+import com.example.albumdetails.AlbumApp;
 import com.example.albumdetails.di.component.DaggerAlbumActivityComponent;
 import com.example.albumdetails.di.module.AlbumActivityModule;
 import com.example.albumdetails.model.Album;
@@ -45,7 +45,7 @@ public class AlbumScreenActivity extends AppCompatActivity implements AlbumMvpCo
         ButterKnife.bind(this);
 
         DaggerAlbumActivityComponent.builder()
-                .applicationComponent(UserApp.getInstance(this).getApplicationComponent())
+                .applicationComponent(AlbumApp.getInstance(this).getApplicationComponent())
                 .albumActivityModule(new AlbumActivityModule(this))
                 .build().inject(this);
 
@@ -64,7 +64,7 @@ public class AlbumScreenActivity extends AppCompatActivity implements AlbumMvpCo
     }
 
     @Override
-    public void setUsers(List<Album> albums) {
+    public void setAlbums(List<Album> albums) {
         albumAdapter.setItems(albums);
     }
 

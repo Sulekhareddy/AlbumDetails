@@ -8,7 +8,7 @@ public interface AlbumMvpContract {
 
     interface View {
 
-        void setUsers(List<Album> users);
+        void setAlbums(List<Album> albums);
 
         void showError(String message);
 
